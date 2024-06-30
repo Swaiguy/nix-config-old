@@ -134,31 +134,6 @@
       flake = false;
     };
 
-    ########################  My own repositories  #########################################
 
-    # my private secrets, it's a private repository, you need to replace it with your own.
-    # use ssh protocol to authenticate via ssh-agent/ssh-key, and shallow clone to save time
-    mysecrets = {
-      url = "git+ssh://git@github.com/ryan4yin/nix-secrets.git?shallow=1";
-      flake = false;
-    };
-
-    # my wallpapers
-    wallpapers = {
-      url = "github:ryan4yin/wallpapers";
-      flake = false;
-    };
-
-    nur-ryan4yin = {
-      url = "github:ryan4yin/nur-packages";
-      # inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # riscv64 SBCs
-    nixos-licheepi4a.url = "github:ryan4yin/nixos-licheepi4a";
-    # nixos-jh7110.url = "github:ryan4yin/nixos-jh7110";
-
-    # aarch64 SBCs
-    nixos-rk3588.url = "github:ryan4yin/nixos-rk3588";
   };
 }
